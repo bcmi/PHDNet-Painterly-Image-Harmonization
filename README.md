@@ -1,3 +1,7 @@
+<p align='center'>  
+  <img src='./examples/introduction.png'/>
+</p>
+
 ## PHDNet: Painterly Image Harmonization in Dual Domains
 [Paper]() 
 ### Introduction
