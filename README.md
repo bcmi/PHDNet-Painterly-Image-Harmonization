@@ -2,7 +2,7 @@
   <img src='./examples/introduction.png'/>
 </p>
 
-## PHDNet: Painterly Image Harmonization in Dual Domains
+# PHDNet: Painterly Image Harmonization in Dual Domains
 [Paper]() 
 ### Introduction
 **Painterly image harmonization** aims to adjust the foreground style of the painterly composite image to make it compatible with the background. A painterly composite image contains a photographic foreground object and a painterly background image.
