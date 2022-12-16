@@ -49,16 +49,50 @@ your_dir
 ## Getting Started
 ### Installation
 - Clone this repo:
+
 ```bash
 git clone 
 cd 
 ```
-- Prepare the [datasets](#datasets)
-- Install PyTorch and dependencies from http://pytorch.org
+
+- Prepare the datasets.
+
+- Install PyTorch and dependencies from http://pytorch.org.
+
 - Install python requirements:
+
 ```bash
 pip install -r requirements.txt
 ```
+
+- Download pre-trained VGG19 from [Baidu Cloud]() (access code:).
+
+### PHDNet train/test
+- Train PHDNet: 
+
+```bash
+cd PHDNet/scripts
+bash train_phd.sh
+```
+
+The trained model would be saved under `./<checkpoint_dir>/<name>/`.
+
+If you want to load a model then continue to train it, add `--continue_train` and set the `--epoch XX` in `train_phd.sh`. It would load the model `./<checkpoint_dir>/<name>/net_G_<epoch>.pth`.
+
+Remember to modify the `content_dir` and `style_dir` to the corresponding path of each dataset in `train_phd.sh`.
+
+- Test PHDNet:
+
+```bash
+cd PHDNet/scripts
+bash test_phd.sh
+```
+
+It would load the model `./<checkpoint_dir>/<name>/net_G_<epoch>.pth` then save the visualization under `./<checkpoint_dir>/<name>/web/TestImages/`
+
+Our pre-trained model would be available on [Baidu Cloud]().
+
+- Note: `<...>` means modifiable parameters.
 
 ## Other Resources
 - [Awesome-Image-Harmonization](https://github.com/bcmi/Awesome-Image-Harmonization)
