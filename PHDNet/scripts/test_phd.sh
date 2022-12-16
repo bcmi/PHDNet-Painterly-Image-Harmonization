@@ -19,7 +19,8 @@ test_epoch=latest
 #####network design
 model_name=phdnet
 datasetmode=wikiart
-
+content_dir="/MS-COCO/"
+style_dir="/wikiart/"
 NAME="phdnetadv_Gphd_skip1_fft1-num3_Dconv-patch4_Content2_Style1_Ggan10_lr2e-4_batch4"
 checkpoint=''../1207-blendC/''
 
@@ -28,7 +29,9 @@ CMD="python ../test.py \
 --checkpoints_dir $checkpoint \
 --model $model_name \
 --netG $G \
---dataset_mode $datasetmode  \
+--dataset_mode $datasetmode \
+--content_dir $content_dir \
+--style_dir $style_dir \
 --is_train 0 \
 --display_id 0 \
 --gan_mode wgangp \

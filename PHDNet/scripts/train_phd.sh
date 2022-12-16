@@ -24,6 +24,8 @@ patch_num=4
 
 model_name=phdnet
 datasetmode=cocoart
+content_dir="/MS-COCO/"
+style_dir="/wikiart/"
 NAME="${model_name}_G${G}_skip${is_skip}_fft${is_fft}-num${fft_num}_D${D}-patch${patch_num}_Content${L_C}_Style${L_S}_Ggan${L_GAN}_lr${lr}_batch${batchs}"
 checkpoint=''../checkpoint/''
 
@@ -34,7 +36,9 @@ CMD="python ../train.py \
 --model $model_name \
 --netG $G \
 --netD $D \
---dataset_mode $datasetmode  \
+--dataset_mode $datasetmode \
+--content_dir $content_dir \
+--style_dir $style_dir \
 --is_train 1 \
 --gan_mode wgangp \
 --normD batch \
