@@ -65,7 +65,7 @@ cd
 pip install -r requirements.txt
 ```
 
-- Download pre-trained VGG19 from [Baidu Cloud]() (access code:).
+- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y).
 
 ### PHDNet train/test
 - Train PHDNet: 
