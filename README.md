@@ -51,7 +51,7 @@ your_dir
 - Clone this repo:
 
 ```bash
-git clone 
+git clone https://github.com/bcmi/PHDNet-Painterly-Image-Harmonization.git
 cd 
 ```
 
