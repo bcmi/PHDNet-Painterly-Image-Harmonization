@@ -1,11 +1,21 @@
-<p align='center'>  
-  <img src='./examples/introduction.png'/>
-</p>
+
 
 # PHDNet: Painterly Image Harmonization in Dual Domains
-[Paper]() 
-### Introduction
+
+This is the official repository for the following paper:
+
+> **Painterly Image Harmonization in Dual Domains**  [[arXiv]](http://arxiv.org/abs/2212.08846)<br>
+>
+> Junyan Cao, Yan Hong, Li Niu<br>
+> Accepted by **AAAI 2023**.
+
+
 **Painterly image harmonization** aims to adjust the foreground style of the painterly composite image to make it compatible with the background. A painterly composite image contains a photographic foreground object and a painterly background image.
+
+
+<p align='center'>  
+  <img src='./examples/introduction.png'  width=70% />
+</p>
 
 ## Datesets
 Paniterly image harmonization requires two types of images: photographic image and painterly image. We cut a certain object from a photographic image by the corresponding instance mask, and then paste it onto a painterly image, generating a composite image. 
