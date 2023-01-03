@@ -62,7 +62,7 @@ your_dir
 
 ```bash
 git clone https://github.com/bcmi/PHDNet-Painterly-Image-Harmonization.git
-cd 
+# cd to this repo's root dir
 ```
 
 - Prepare the datasets.
