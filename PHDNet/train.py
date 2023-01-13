@@ -39,8 +39,8 @@ def evaluateModel(model, opt, test_dataloader, epoch, visualizer):
         model.set_input(data)         # unpack data from dataset
         model.forward()   # calculate loss functions, get gradients, update network weights
         if total_iters % opt.display_freq == 0:
-            visual_dict, mask_dict = model.get_current_visuals()
-            visualizer.display_current_results(visual_dict, mask_dict, epoch)
+            visual_dict = model.get_current_visuals()
+            visualizer.display_current_results(visual_dict, epoch)
             # visualizer.display_current_results(visual_dict, total_iters)
 
 
