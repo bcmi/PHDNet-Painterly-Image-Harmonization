@@ -100,7 +100,7 @@ bash test_phd.sh
 
 It would load the model `./<checkpoint_dir>/<name>/net_G_<epoch>.pth` then save the visualization under `./<checkpoint_dir>/<name>/web/TestImages/`
 
-Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1JUWkB0KciEh4DyDuqtdWMg) (access code: azug).
+Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q).
 
 - Note: `<...>` means modifiable parameters.
 
