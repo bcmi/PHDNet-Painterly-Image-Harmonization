@@ -104,6 +104,15 @@ Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6i
 
 - Note: `<...>` means modifiable parameters.
 
+
+### Experimental results
+
+Our method is especially good at handling the background paintings with periodic textures and patterns, because we leverage the information from both spatial domain and frequency domain. 
+
+<p align='center'>  
+  <img src='./examples/experimental_results.jpg'  width=90% />
+</p>
+
 ## Other Resources
 - [Awesome-Image-Harmonization](https://github.com/bcmi/Awesome-Image-Harmonization)
 - [Awesome-Image-Composition](https://github.com/bcmi/Awesome-Image-Composition)
