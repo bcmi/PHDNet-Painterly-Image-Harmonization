@@ -37,5 +37,10 @@ class TestOptions(BaseOptions):
         parser.add_argument('--lr_decay_iters', type=int, default=50, help='multiply by a gamma every lr_decay_iters iterations')
         parser.set_defaults(pool_size=0, gan_mode='vanilla')
 
+        parser.add_argument('--content', type=str, default='', help='the path of content images to test')
+        parser.add_argument('--mask', type=str, default='', help='the path of foreground masks for the composite image to test')
+        parser.add_argument('--style', type=str, default='', help='the path of style images to test')
+        parser.add_argument('--save_dir', type=str, default='../samples', help='the path to save the harmonized result')
+
         self.isTrain = True
         return parser
