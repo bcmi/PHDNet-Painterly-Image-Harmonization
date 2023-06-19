@@ -2,6 +2,7 @@
 import torch.utils.data
 from data.base_dataset import BaseDataset
 from data.cocoart_dataset import COCOARTDataset
+from data.phd_dataset import PHDDataset
 import numpy as np
 import random
 
@@ -28,6 +29,9 @@ class CustomDataset(object):
         self.opt = opt
         if opt.dataset_mode.lower() == 'cocoart':
             self.dataset = COCOARTDataset(opt,is_for_train)
+            print("dataset [%s] was created" % type(self.dataset).__name__)
+        elif opt.dataset_mode.lower() == 'phd':
+            self.dataset = PHDDataset(opt,is_for_train)
             print("dataset [%s] was created" % type(self.dataset).__name__)
         else:
             raise ValueError(opt.dataset_mode, "not implmented.")
