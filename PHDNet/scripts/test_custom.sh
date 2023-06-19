@@ -19,7 +19,7 @@ test_epoch=latest
 #####network design
 model_name=phdnet
 datasetmode=phd
-content=""  # content dir or name
+content=""  # content dir or name. If is dir, the triplets `content_image/style_image/mask` should be the same name.
 style=""  # style dir or name
 mask=""  # mask dir or name
 save_dir="../samples"
