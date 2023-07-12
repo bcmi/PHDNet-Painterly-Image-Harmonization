@@ -18,7 +18,7 @@ test_epoch=latest
 
 #####network design
 model_name=phdnet
-datasetmode=wikiart
+datasetmode=cocoart
 content_dir="/MS-COCO/"
 style_dir="/wikiart/"
 NAME="phdnetadv_Gphd_skip1_fft1-num3_Dconv-patch4_Content2_Style1_Ggan10_lr2e-4_batch4"
