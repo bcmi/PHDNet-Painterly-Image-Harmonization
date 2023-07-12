@@ -85,9 +85,9 @@ cd PHDNet/scripts
 bash train_phd.sh
 ```
 
-The trained model would be saved under `./<checkpoint_dir>/<name>/`.
+The trained model would be saved under `./<checkpoints_dir>/<name>/`.
 
-If you want to load a model then continue to train it, add `--continue_train` and set the `--epoch XX` in `train_phd.sh`. It would load the model `./<checkpoint_dir>/<name>/net_G_<epoch>.pth`.
+If you want to load a model then continue to train it, add `--continue_train` and set the `--epoch XX` in `train_phd.sh`. It would load the model `./<checkpoints_dir>/<name>/net_G_<epoch>.pth`.
 
 Remember to modify the `content_dir` and `style_dir` to the corresponding path of each dataset in `train_phd.sh`.
 
@@ -98,7 +98,7 @@ cd PHDNet/scripts
 bash test_phd.sh
 ```
 
-It would load the model `./<checkpoint_dir>/<name>/net_G_<epoch>.pth` then save the visualization under `./<checkpoint_dir>/<name>/web/TestImages/`
+It would load the model `./<checkpoints_dir>/<name>/net_G_<epoch>.pth` then save the visualization under `./<checkpoints_dir>/<name>/web/TestImages/`
 
 Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q).
 
