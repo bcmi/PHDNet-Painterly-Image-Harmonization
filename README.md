@@ -88,6 +88,7 @@ bash train_phd.sh
 The trained model would be saved under `./<checkpoints_dir>/<name>/`.
 
 If you want to load a model then continue to train it, add `--continue_train` and set the `--epoch XX` in `train_phd.sh`. It would load the model `./<checkpoints_dir>/<name>/net_G_<epoch>.pth`.
+For example, if the model is saved in `./AA/BB/net_G_latest.pth`, the `checkpoints_dir` should be `../AA/` and the `name` should be `BB`. And the `epoch` should be `latest`.
 
 Remember to modify the `content_dir` and `style_dir` to the corresponding path of each dataset in `train_phd.sh`.
 
