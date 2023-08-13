@@ -75,7 +75,7 @@ git clone https://github.com/bcmi/PHDNet-Painterly-Image-Harmonization.git
 pip install -r requirements.txt
 ```
 
-- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y).
+- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y) or [Google Drive](https://drive.google.com/drive/folders/1dAuUFMjRr3mxAaDkvXQzLBjMyIjNIZsC).
 
 ### PHDNet train/test
 - Train PHDNet: 
@@ -101,7 +101,7 @@ bash test_phd.sh
 
 It would load the model `./<checkpoints_dir>/<name>/<epoch>_net_G.pth` then save the visualization under `./<checkpoints_dir>/<name>/web/TestImages/`
 
-Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q).
+Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q) or [Google Drive](https://drive.google.com/drive/folders/1dAuUFMjRr3mxAaDkvXQzLBjMyIjNIZsC).
 
 - Note: `<...>` means modifiable parameters.
 
