@@ -18,6 +18,8 @@ This is the official repository for the following paper:
   <img src='./examples/introduction.png'  width=70% />
 </p>
 
+**Our PHDNet is the first feed-forward painterly image harmonization method with released code.**
+
 ## Datesets
 Paniterly image harmonization requires two types of images: photographic image and painterly image. We cut a certain object from a photographic image by the corresponding instance mask, and then paste it onto a painterly image, generating a composite image. 
 ### Photographic image
