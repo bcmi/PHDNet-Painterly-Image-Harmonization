@@ -8,6 +8,8 @@ This is the official repository for the following paper:
 > Accepted by **AAAI 2023**.
 
 
+**Part of our PHDNet has been integrated into our image composition toolbox libcom https://github.com/bcmi/libcom. Welcome to visit and try ＼(^▽^)／** 
+
 **Painterly image harmonization** aims to adjust the foreground style of the painterly composite image to make it compatible with the background. A painterly composite image contains a photographic foreground object and a painterly background image.
 
 
