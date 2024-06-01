@@ -26,9 +26,9 @@ Sometimes setting the background style as the target style is not reasonable, th
 ## Datesets
 Paniterly image harmonization requires two types of images: photographic image and painterly image. We cut a certain object from a photographic image by the corresponding instance mask, and then paste it onto a painterly image, generating a composite image. 
 ### Photographic image
-We apply images from [COCO](https://arxiv.org/pdf/1405.0312.pdf) to produce the foreground objects. For each image, We select the object with foreground ratio in [0.05, 0.3] and generate the forefround mask. The selected foreground masks are provided in [selected_masks](https://pan.baidu.com/s/1x4BIPtOP02I8rcpNUZeSKA) (access code: ww1t). The training set can be downloaded from [COCO_train](http://images.cocodataset.org/zips/train2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/19d5BsbcVwIH4jMXGLpcBtg) (access code: nfsh)) and the test set from [COCO_test](http://images.cocodataset.org/zips/val2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/1bOZzpoyO3aNPR3NSqAVXkw) (access code: nsvj)).
+We apply images from [COCO](https://arxiv.org/pdf/1405.0312.pdf) to produce the foreground objects. For each image, We select the object with foreground ratio in [0.05, 0.3] and generate the forefround mask. The selected foreground masks are provided in [Baidu Cloud](https://pan.baidu.com/s/1x4BIPtOP02I8rcpNUZeSKA) (access code: ww1t) or [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgRxR_tq8JAEHvmhY?e=K2llX8). The training set can be downloaded from [COCO_train](http://images.cocodataset.org/zips/train2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/19d5BsbcVwIH4jMXGLpcBtg) (access code: nfsh), [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgR6uQZPVYOUKLkW-?e=31IEi0)) and the test set from [COCO_test](http://images.cocodataset.org/zips/val2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/1bOZzpoyO3aNPR3NSqAVXkw) (access code: nsvj), [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgR2IfB9gGPZ3FOZN?e=WqPXkS)).
 ### Painterly image
-We apply images from [WikiArt](https://www.wikiart.org/) to be the backgrounds. The dataset can be downloaded from [WikiArt](https://pan.baidu.com/s/192pGtJeMzj5VqTDjH6DUXg) (access code: sc0c). The training/test data list are provided in [wikiart_split](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset/Style).
+We apply images from [WikiArt](https://www.wikiart.org/) to be the backgrounds. The dataset can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/192pGtJeMzj5VqTDjH6DUXg) (access code: sc0c) or [OneDrive](https://1drv.ms/f/s!AohNSvvkuxZmgSZEBEr6TWVbD5jz?e=YBIplJ). The training/test data list are provided in [wikiart_split](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset/Style) or [OneDrive](https://1drv.ms/f/s!AohNSvvkuxZmgRYdBB84vH8XXPL0?e=XiIYRH).
 
 The example dataset dirs:
 ```
@@ -81,7 +81,7 @@ git clone https://github.com/bcmi/PHDNet-Painterly-Image-Harmonization.git
 pip install -r requirements.txt
 ```
 
-- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y) or [Google Drive](https://drive.google.com/drive/folders/1dAuUFMjRr3mxAaDkvXQzLBjMyIjNIZsC).
+- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y) or [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgRoCqHs226QuvsNh?e=t4iRVD).
 
 ### PHDNet train/test
 - Train PHDNet: 
@@ -107,7 +107,7 @@ bash test_phd.sh
 
 It would load the model `./<checkpoints_dir>/<name>/<epoch>_net_G.pth` then save the visualization under `./<checkpoints_dir>/<name>/web/TestImages/`
 
-Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q) or [Google Drive](https://drive.google.com/drive/folders/1dAuUFMjRr3mxAaDkvXQzLBjMyIjNIZsC).
+Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q) or [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgRuRFDiH6tKZTxpI?e=DpTO2a).
 
 - Note: `<...>` means modifiable parameters.
 
