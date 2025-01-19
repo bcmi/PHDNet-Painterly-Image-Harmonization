@@ -122,4 +122,4 @@ Our method is especially good at handling the background paintings with periodic
 
 ## Other Resources
 - [Awesome-Image-Harmonization](https://github.com/bcmi/Awesome-Image-Harmonization)
-- [Awesome-Image-Composition](https://github.com/bcmi/Awesome-Image-Composition)
+- [Awesome-Image-Composition](https://github.com/bcmi/Awesome-Object-Insertion)
