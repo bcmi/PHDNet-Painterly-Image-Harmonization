@@ -26,9 +26,9 @@ Sometimes setting the background style as the target style is not reasonable, th
 ## Datesets
 Paniterly image harmonization requires two types of images: photographic image and painterly image. We cut a certain object from a photographic image by the corresponding instance mask, and then paste it onto a painterly image, generating a composite image. 
 ### Photographic image
-We apply images from [COCO](https://arxiv.org/pdf/1405.0312.pdf) to produce the foreground objects. For each image, We select the object with foreground ratio in [0.05, 0.3] and generate the forefround mask. The selected foreground masks are provided in [Baidu Cloud](https://pan.baidu.com/s/1x4BIPtOP02I8rcpNUZeSKA) (access code: ww1t) or [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgRxR_tq8JAEHvmhY?e=K2llX8). The training set can be downloaded from [COCO_train](http://images.cocodataset.org/zips/train2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/19d5BsbcVwIH4jMXGLpcBtg) (access code: nfsh), [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgR6uQZPVYOUKLkW-?e=31IEi0)) and the test set from [COCO_test](http://images.cocodataset.org/zips/val2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/1bOZzpoyO3aNPR3NSqAVXkw) (access code: nsvj), [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgR2IfB9gGPZ3FOZN?e=WqPXkS)).
+We apply images from [COCO](https://arxiv.org/pdf/1405.0312.pdf) to produce the foreground objects. For each image, We select the object with foreground ratio in [0.05, 0.3] and generate the forefround mask. The selected foreground masks are provided in [Baidu Cloud](https://pan.baidu.com/s/1x4BIPtOP02I8rcpNUZeSKA) (access code: ww1t) or [Dropbox](https://www.dropbox.com/scl/fi/ldvyu4tmqcjanot6m08yy/SegmentationClass_select.tar.gz?rlkey=drjw13zkkzimlfjsqphvf3adv&st=44mv4isn&dl=0). The training set can be downloaded from [COCO_train](http://images.cocodataset.org/zips/train2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/19d5BsbcVwIH4jMXGLpcBtg) (access code: nfsh), [Dropbox](https://www.dropbox.com/scl/fi/7fmkqhe6hg62u32nvp34s/train2014.zip?rlkey=uoxvjd175q5ot263y1my9olyf&st=zq29s020&dl=0)) and the test set from [COCO_test](http://images.cocodataset.org/zips/val2014.zip) (alternative: [Baidu Cloud](https://pan.baidu.com/s/1bOZzpoyO3aNPR3NSqAVXkw) (access code: nsvj), [Dropbox](https://www.dropbox.com/scl/fi/i1t4zrted96lcklnjnp9q/val2014.zip?rlkey=o7qrcdhpqw6taivtdvs2uh79y&st=a5b2vnl7&dl=0)).
 ### Painterly image
-We apply images from [WikiArt](https://www.wikiart.org/) to be the backgrounds. The dataset can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/192pGtJeMzj5VqTDjH6DUXg) (access code: sc0c) or [OneDrive](https://1drv.ms/f/s!AohNSvvkuxZmgSZEBEr6TWVbD5jz?e=YBIplJ). The training/test data list are provided in [wikiart_split](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset/Style) or [OneDrive](https://1drv.ms/f/s!AohNSvvkuxZmgRYdBB84vH8XXPL0?e=XiIYRH).
+We apply images from [WikiArt](https://www.wikiart.org/) to be the backgrounds. The dataset can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/192pGtJeMzj5VqTDjH6DUXg) (access code: sc0c) or [Dropbox](https://www.dropbox.com/scl/fo/9iqa8772hwlgu18vr92et/ABh2Dwgizgc-xhycKDGeaZA?rlkey=6tdv6cqe0zaeteetw23kb2hjz&st=h2v562tr&dl=0). The training/test data list are provided in [wikiart_split](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset/Style) or [Dropbox](https://www.dropbox.com/scl/fo/2pk6afywxg0ify2zv4t9w/ADbsxQzhw5JLxWB9CQeYPU0?rlkey=lu7mgqgebc63t647ylf75xtyo&st=ldg0aref&dl=0).
 
 The example dataset dirs:
 ```
@@ -81,7 +81,7 @@ git clone https://github.com/bcmi/PHDNet-Painterly-Image-Harmonization.git
 pip install -r requirements.txt
 ```
 
-- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y) or [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgRoCqHs226QuvsNh?e=t4iRVD).
+- Download pre-trained VGG19 from [Baidu Cloud](https://pan.baidu.com/s/1HljOE-4Q2yUeeWmteu0nNA) (access code: pc9y) or [Dropbox](https://www.dropbox.com/scl/fi/vmi4vsg7og41xy8y20j8j/vgg_normalised.pth?rlkey=mbf24da9ac4fnyig1qbkgeem8&st=fjt3274i&dl=0).
 
 ### PHDNet train/test
 - Train PHDNet: 
@@ -107,7 +107,7 @@ bash test_phd.sh
 
 It would load the model `./<checkpoints_dir>/<name>/<epoch>_net_G.pth` then save the visualization under `./<checkpoints_dir>/<name>/web/TestImages/`
 
-Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q) or [OneDrive](https://1drv.ms/u/s!AohNSvvkuxZmgRuRFDiH6tKZTxpI?e=DpTO2a).
+Our pre-trained model is available on [Baidu Cloud](https://pan.baidu.com/s/1D6iAS6Sli1QggLp-E9EvyQ) (access code: po7q) or [Dropbox](https://www.dropbox.com/scl/fi/frud0136kx3jizjdkpte0/latest_net_G.pth?rlkey=evhxja7g5vi8ageq7gqhatsxs&st=a1ai0zu5&dl=0).
 
 - Note: `<...>` means modifiable parameters.
 
