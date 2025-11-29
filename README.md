@@ -23,6 +23,10 @@ When the background has dense textures or abstract style, our [PHDiffusion](http
 
 Sometimes setting the background style as the target style is not reasonable, this problem has been solved in our [ArtoPIH](https://github.com/bcmi/ArtoPIH-Painterly-Image-Harmonization). 
 
+## Online Demo
+
+Try this [online demo](http://libcom.ustcnewly.com/) for image composition and have fun!
+
 ## Datesets
 Paniterly image harmonization requires two types of images: photographic image and painterly image. We cut a certain object from a photographic image by the corresponding instance mask, and then paste it onto a painterly image, generating a composite image. 
 ### Photographic image
