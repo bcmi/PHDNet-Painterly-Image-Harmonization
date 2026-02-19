@@ -27,6 +27,8 @@ Sometimes setting the background style as the target style is not reasonable, th
 
 Try this [online demo](http://libcom.ustcnewly.com/) for image composition and have fun!
 
+[![]](https://github.com/user-attachments/assets/87416ec5-2461-42cb-9f2d-5030b1e1b5ec)
+
 ## Datesets
 Paniterly image harmonization requires two types of images: photographic image and painterly image. We cut a certain object from a photographic image by the corresponding instance mask, and then paste it onto a painterly image, generating a composite image. 
 ### Photographic image
